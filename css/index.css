@@ -1,3 +1,237 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+ body {
+	 display: flex;
+	 font: 15px/1.5 Arial, Helvetica, Sans-serif;
+	 padding: 15px;
+	 margin: 0
+ }
+
+.container {
+	width: auto;
+	overflow: hidden;
+  }
+.top {
+    width: 100%;
+}
+	header {
+        background: dodgerblue;
+        border-bottom: #e8491d;
+		color: black;
+        padding-top: 0;
+        width: 100%;
+		
+	}
+
+	header nav {
+		text-align: center;
+        padding: 30px 40px 0 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    header nav a {
+        padding: 5px;
+}
+
+	header nav a:hover {
+    text-decoration: none;
+    color: red;  
+  }
+
+  header .logo { 
+    padding: 10px;
+    size: 20px;
+    margin: 85px;
+  } 
+
+  h1 {
+	font-size: 75px; 
+	box-align: center; 
+  }
+
+  .cta .h1{
+      display: inline-block;
+  }
+
+  .cta .code {
+    padding: 35px;
+    align-items: center;
+	
+  }
+  
+  
+  #horizontal-line {
+		width: 20px;
+		height: 1px;
+		margin: 10px;
+		background-color: black;
+  
+    }
+
+    .info {
+    align-items: center;
+    }
+    
+    .wrapper .card1 {
+        padding: 20px;
+        width: 420px;
+        margin: 20px 0;
+        border-bottom: 1px dashed black;
+    }
+	
+
+	.wrapper .card2{
+        padding: 20px;
+        width: 420px;
+        margin: 20px 0;
+        border-bottom: 1px dashed black;
+
+	}
+
+	.wrapper .card3{
+        padding: 20px;
+        width: 420px;
+        margin: 20px 0;
+        border-bottom: 1px dashed black;
+	}
+
+	.services {
+        padding: 20px;
+        width: 420px;
+        margin: 20px 0;
+
+	}
+
+	.box {
+		width: 290px;
+		height: 100px;
+		margin: 0;
+		padding: 4px 6px;
+		font: 28px "Marker Felt", "Zapfino", cursive;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+  #horizontal-line2 {
+	width: 1050px;
+	height: 1px;
+	margin: 10px;
+	background-color: black;
+  }
+  
+  .contact {
+	margin: 30px;
+  }
+  
+  .more {
+	margin: 30px;
+	line-height:50px;
+  }
+  
+  .copy {
+	text-align: center;
+	margin-bottom: 30px;
+	
+  }
+
+  @media (max-width: 600px) {
+
+    header {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    header .logo {
+        text-align: center;
+        display: flex;
+        font-size: 50px;
+    }
+
+    header nav {
+        justify-content: space-between;
+        flex-direction: column;
+        font-size: 20px;
+    }
+
+    header nav a {
+        margin: 40px;
+        border: black;
+    }
+   
+
+
+
+
+  }
+  
+
+  
